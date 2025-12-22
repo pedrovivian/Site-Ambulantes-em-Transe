@@ -25,7 +25,8 @@ const Hero = () => {
         logo: {
             maxWidth: 'min(500px, 90vw)',
             // Logo is likely black lines, use as is for white bg
-            marginBottom: '2rem',
+            marginBottom: '0.5rem',
+            marginTop: '8rem',
             animation: 'fadeInUp 1s ease-out',
         },
         subtitle: {
