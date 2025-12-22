@@ -3,7 +3,7 @@ import '../index.css';
 const About = () => {
     const styles = {
         section: {
-            padding: '4rem 2rem',
+            padding: '4rem 1rem',
             backgroundColor: 'transparent',
             color: 'var(--c-text)',
             display: 'flex',
@@ -25,10 +25,10 @@ const About = () => {
     return (
         <section id="about" style={styles.section}>
             <div style={styles.container}>
-                <h2 className="text-gradient" style={{ fontSize: '3rem', marginBottom: '2rem' }}>QUEM SOMOS</h2>
+                <h2 className="text-gradient" style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: '2rem' }}>QUEM SOMOS</h2>
                 <p style={styles.text}>
-                    Ambulantes em Transe é uma banda emo (eu acho) composta atualmente por 3 pessoas. 
-                    Surgiram em meados de 2025 e seguem fazendo música por ai, tendo em vista que são 
+                    Ambulantes em Transe é uma banda emo (eu acho) composta atualmente por 3 pessoas.
+                    Surgiram em meados de 2025 e seguem fazendo música por ai, tendo em vista que são
                     totalmente independentes. Possuem o lançamento de um álbum contendo 10 faixas, onde 4 delas
                     já foram lançadas como single anteriormente.
                 </p>

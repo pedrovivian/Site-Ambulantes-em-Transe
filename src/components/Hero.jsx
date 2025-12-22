@@ -23,7 +23,8 @@ const Hero = () => {
             alignItems: 'center',
         },
         logo: {
-            maxWidth: 'min(500px, 90vw)',
+            maxWidth: '500px',
+            width: '80%',
             // Logo is likely black lines, use as is for white bg
             marginBottom: '0.5rem',
             marginTop: '8rem',
@@ -36,6 +37,8 @@ const Hero = () => {
             marginBottom: '3rem',
             letterSpacing: '2px',
             animation: 'fadeInUp 1.2s ease-out',
+            maxWidth: '100%',
+            padding: '0 1rem',
         },
         arrow: {
             color: 'var(--c-text)',

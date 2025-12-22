@@ -4,7 +4,7 @@ import AlbumCover from '../assets/images/album-cover.jpg';
 const Music = () => {
     const styles = {
         section: {
-            padding: '4rem 2rem',
+            padding: '4rem 1rem',
             background: 'transparent',
         },
         grid: {
@@ -22,7 +22,7 @@ const Music = () => {
             textAlign: 'center',
             transition: 'transform 0.3s ease',
             boxShadow: '4px 4px 0px rgba(0,0,0,0.1)',
-            maxWidth: '400px',
+            maxWidth: 'min(400px, 100%)',
             width: '100%',
         },
         albumTitle: {
@@ -47,7 +47,7 @@ const Music = () => {
 
     return (
         <section id="music" style={styles.section}>
-            <h2 className="text-gradient" style={{ textAlign: 'center', fontSize: '3rem', marginBottom: '3rem' }}>ÚLTIMO LANÇAMENTO</h2>
+            <h2 className="text-gradient" style={{ textAlign: 'center', fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: '3rem' }}>ÚLTIMO LANÇAMENTO</h2>
             <div style={styles.grid}>
                 {tracks.map((track, i) => (
                     <div key={i} style={styles.card} className="music-card">

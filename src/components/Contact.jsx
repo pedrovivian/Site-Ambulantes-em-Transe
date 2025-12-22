@@ -4,13 +4,13 @@ import { FaInstagram, FaSpotify, FaYoutube } from 'react-icons/fa';
 const Contact = () => {
     const styles = {
         section: {
-            padding: '4rem 2rem',
+            padding: '4rem 1rem',
             backgroundColor: '#f9f9f9', /* Slightly off-white for footer area */
             textAlign: 'center',
             borderTop: '2px solid #000',
         },
         form: {
-            maxWidth: '500px',
+            maxWidth: 'min(500px, 100%)',
             margin: '0 auto 3rem auto',
             display: 'flex',
             flexDirection: 'column',
@@ -24,6 +24,7 @@ const Contact = () => {
             fontFamily: 'var(--f-body)',
             fontSize: '1rem',
             borderRadius: '4px',
+            width: '100%',
         },
         footer: {
             marginTop: '4rem',
@@ -34,7 +35,7 @@ const Contact = () => {
 
     return (
         <section id="contact" style={styles.section}>
-            <h2 className="text-gradient" style={{ fontSize: '3rem', marginBottom: '2rem' }}>ENVIE NOS UM E-MAIL
+            <h2 className="text-gradient" style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: '2rem' }}>ENVIE NOS UM E-MAIL
             </h2>
             <form style={styles.form} action="mailto:ambulantesemtranseofc@gmail.com" method="POST" encType="text/plain">
                 <input style={styles.input} type="email" name="email" placeholder="SEU E-MAIL" required />
