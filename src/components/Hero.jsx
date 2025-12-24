@@ -44,6 +44,7 @@ const Hero = () => {
         spiral: {
             position: 'absolute',
             width: '80%',
+            marginBottom: '2rem',
             height: 'auto',
             zIndex: 1,
             opacity: 0.7,
@@ -53,7 +54,8 @@ const Hero = () => {
             fontFamily: 'var(--f-sketch)',
             fontSize: 'clamp(1.5rem, 5vw, 2.5rem)',
             color: 'var(--c-text)',
-            marginBottom: '3rem',
+            marginBottom: '2rem',
+            marginTop: '3rem',
             letterSpacing: '2px',
             animation: 'fadeInUp 1.2s ease-out',
             maxWidth: '100%',
@@ -63,7 +65,7 @@ const Hero = () => {
             color: 'var(--c-text)',
             fontSize: '3rem',
             animation: 'bounce 2s infinite',
-            cursor: 'pointer',
+            cursor: 'default',
         },
         background: {
             position: 'absolute',
