@@ -35,7 +35,7 @@ const Contact = () => {
 
     return (
         <section id="contact" style={styles.section}>
-            <h2 className="text-gradient" style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: '2rem' }}>ENVIE NOS UM E-MAIL
+            <h2 className="text-gradient" style={{ fontSize: 'clamp(1.8rem, 5vw, 3rem)', marginBottom: '2rem' }}>ENVIE-NOS UM E-MAIL
             </h2>
             <form style={styles.form} action="mailto:ambulantesemtranseofc@gmail.com" method="POST" encType="text/plain">
                 <input style={styles.input} type="email" name="email" placeholder="SEU E-MAIL" required />
