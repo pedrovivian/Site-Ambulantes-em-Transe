@@ -53,3 +53,52 @@
         transform: translateY(-10px);
     }
 }
+
+/* User Logo Animations */
+@keyframes girar {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(-360deg);
+    }
+}
+
+@keyframes crescer {
+    0% {
+        scale: .97;
+        transform: skew(-5deg) matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+
+    100% {
+        scale: 1.1;
+        transform: skew(8deg) matrix3d(-1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)
+    }
+}
+
+.logo-animated {
+    animation: crescer 10s linear infinite alternate;
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.spiral-animated {
+    position: absolute;
+    z-index: -1;
+    width: 80%;
+    height: auto;
+    opacity: 0.7;
+    animation: girar 10s linear infinite;
+}
+
+
+.logo-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+}
